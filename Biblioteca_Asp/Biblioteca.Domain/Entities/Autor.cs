@@ -7,7 +7,7 @@ namespace Entities
         {
             LibAut = new HashSet<LibAut>();
         }
-        public string IdAutor { get; set; }
+        public int IdAutor { get; set; }
         public string Nombre { get; set; }
         public string Nacionalidad { get; set; }
         public ICollection<LibAut> LibAut { get; private set; }

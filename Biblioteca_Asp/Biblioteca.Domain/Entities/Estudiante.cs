@@ -8,7 +8,7 @@ namespace Entities
         {
             Prestamo = new HashSet<Prestamo>();
         }
-        public string IdEstudiante { get; set; }
+        public int IdEstudiante { get; set; }
         public string CI { get; set; }
         public string Nombre { get; set; }
         public string Direccion { get; set; }

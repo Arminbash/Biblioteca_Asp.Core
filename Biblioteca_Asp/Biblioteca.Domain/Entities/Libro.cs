@@ -9,7 +9,7 @@ namespace Entities
             LibAut = new HashSet<LibAut>();
             Prestamo = new HashSet<Prestamo>();
         }
-        public string IdLibro { get; set; }
+        public int IdLibro { get; set; }
         public string Titulo { get; set; }
         public string Editorial { get; set; }
         public string Area { get; set; }
