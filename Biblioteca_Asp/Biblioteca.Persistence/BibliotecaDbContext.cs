@@ -27,5 +27,6 @@ namespace Biblioteca.Persistence
             modelBuilder.Configurations.AddFromAssembly(typeof(BibliotecaDbContext).Assembly);
             base.OnModelCreating(modelBuilder);
         }
+
     }
 }

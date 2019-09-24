@@ -55,7 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BibliotecaDbContext.cs" />
+    <Compile Include="BibliotecaInitializer.cs" />
     <Compile Include="Configurations\AutorConfiguration.cs" />
+    <Compile Include="Configurations\EstudianteConfiguration.cs" />
+    <Compile Include="Configurations\LibAutConfiguration.cs" />
+    <Compile Include="Configurations\LibroConfiguration.cs" />
+    <Compile Include="Configurations\PrestamoConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
