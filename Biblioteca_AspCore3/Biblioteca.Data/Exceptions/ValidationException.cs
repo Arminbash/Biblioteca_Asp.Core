@@ -7,7 +7,7 @@ namespace Biblioteca.Data.Exceptions
 {
     public class ValidationException : Exception
     {
-        public ValidationException(): base("One or more validation failures have occurred.")
+        public ValidationException(): base("Se han producido uno o más fallos de validación.")
         {
             Failures = new Dictionary<string, string[]>();
         }
