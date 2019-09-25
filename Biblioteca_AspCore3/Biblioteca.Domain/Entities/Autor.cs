@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
 namespace Entities
 {
     public  class Autor
@@ -7,6 +9,7 @@ namespace Entities
         {
             LibAut = new HashSet<LibAut>();
         }
+        [Key]
         public int IdAutor { get; set; }
         public string Nombre { get; set; }
         public string Nacionalidad { get; set; }

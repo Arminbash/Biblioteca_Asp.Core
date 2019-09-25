@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Entities
 {
@@ -8,6 +9,7 @@ namespace Entities
         {
             Prestamo = new HashSet<Prestamo>();
         }
+        [Key]
         public int IdEstudiante { get; set; }
         public string CI { get; set; }
         public string Nombre { get; set; }

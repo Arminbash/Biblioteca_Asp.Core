@@ -8,11 +8,6 @@ namespace Biblioteca.Persistence
 {
     public class BibliotecaInitializer
     {
-        private readonly Dictionary<int, Autor> Autors = new Dictionary<int, Autor>();
-        private readonly Dictionary<int, Estudiante> Estudiantes = new Dictionary<int, Estudiante>();
-        private readonly Dictionary<int, LibAut> LibAuts = new Dictionary<int, LibAut>();
-        private readonly Dictionary<int, Libro> Libros = new Dictionary<int, Libro>();
-        private readonly Dictionary<int, Prestamo> Prestamos = new Dictionary<int, Prestamo>();
         public static void Initialize(BibliotecaDbContext context)
         {
             var initializer = new BibliotecaInitializer();
@@ -25,7 +20,7 @@ namespace Biblioteca.Persistence
 
             if (context.Set<Autor>().Any())
             {
-                return; // Db has been seeded
+                return; //Db ha sido creada
             }
 
             SeedAutors(context);
