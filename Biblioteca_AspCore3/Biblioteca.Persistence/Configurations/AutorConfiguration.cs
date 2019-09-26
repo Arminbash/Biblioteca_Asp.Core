@@ -14,7 +14,7 @@ namespace Biblioteca.Persistence.Configurations
 
             builder.Property(e => e.Nombre)
                 .IsRequired()
-                .HasMaxLength(100).HasColumnName("varchar(100)");
+                .HasMaxLength(100).HasColumnType("varchar(100)");
 
             builder.Property(e => e.Nacionalidad).HasColumnType("varchar(100)").HasMaxLength(100);
         }

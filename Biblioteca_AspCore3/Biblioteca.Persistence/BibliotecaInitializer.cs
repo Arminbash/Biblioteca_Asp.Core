@@ -33,7 +33,7 @@ namespace Biblioteca.Persistence
         {
             var Autors = new[]
             {
-                new Autor {IdAutor =1 ,Nombre = "Juan",Nacionalidad = "Nicaraguense"}
+                new Autor {Nombre = "Juan",Nacionalidad = "Nicaraguense"}
             };
 
             context.Set<Autor>().AddRange(Autors);

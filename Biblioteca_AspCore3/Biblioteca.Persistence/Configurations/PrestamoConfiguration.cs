@@ -12,11 +12,11 @@ namespace Biblioteca.Persistence.Configurations
 
             builder.Property(e => e.IdPrestamo).HasColumnName("IdPrestamo").HasColumnType("int");
 
-            builder.Property(e => e.FechaPrestamo).HasColumnName("datetime");
+            builder.Property(e => e.FechaPrestamo).HasColumnType("datetime");
 
-            builder.Property(e => e.FechaDevolucion).HasColumnName("datetime");
+            builder.Property(e => e.FechaDevolucion).HasColumnType("datetime");
 
-            builder.Property(e => e.Devolucion).HasColumnName("bit");
+            builder.Property(e => e.Devolucion).HasColumnType("bit");
         }
     }
 }

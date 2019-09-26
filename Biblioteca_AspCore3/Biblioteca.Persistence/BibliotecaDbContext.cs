@@ -25,17 +25,9 @@ namespace Biblioteca.Persistence
             
         }
 
-        public DbSet<Autor> Autor { get; set; }
-        public DbSet<Estudiante> Estudiante { get; set; }
-        public DbSet<LibAut> LibAut { get; set; }
-        public DbSet<Libro> Libro { get; set; }
-        public DbSet<Prestamo> Prestamo { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(BibliotecaDbContext).Assembly);
-
-           // base.OnModelCreating(modelBuilder);
         }
 
     }
