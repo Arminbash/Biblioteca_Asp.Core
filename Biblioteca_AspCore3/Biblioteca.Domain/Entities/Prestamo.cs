@@ -5,6 +5,10 @@ namespace Entities
 {
    public class Prestamo
     {
+        public Prestamo()
+        {
+           
+        }
         [Key]
         public int IdPrestamo { get; set; }
         public DateTime FechaPrestamo { get; set; }

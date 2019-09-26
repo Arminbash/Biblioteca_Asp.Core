@@ -5,7 +5,10 @@ using Biblioteca.Data.Interfaces;
 using Entities;
 using Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Biblioteca.Persistence.Configurations;
+using Microsoft.EntityFrameworkCore.Relational;
+
 namespace Biblioteca.Persistence
 {
     public class BibliotecaDbContext : DbContext, IBibliotecaDbContext
@@ -22,23 +25,17 @@ namespace Biblioteca.Persistence
             
         }
 
-        public virtual DbSet<Autor> Autor { get; set; }
-        public virtual DbSet<Estudiante> Estudiante { get; set; }
-        public virtual DbSet<LibAut> LibAut { get; set; }
-        public virtual DbSet<Libro> Libro { get; set; }
-        public virtual DbSet<Prestamo> Prestamo { get; set; }
+        public DbSet<Autor> Autor { get; set; }
+        public DbSet<Estudiante> Estudiante { get; set; }
+        public DbSet<LibAut> LibAut { get; set; }
+        public DbSet<Libro> Libro { get; set; }
+        public DbSet<Prestamo> Prestamo { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(BibliotecaDbContext).Assembly);
 
-            //AutorConfiguration.Configure(modelBuilder.Entity<Autor>().ToTable("Employee"));
-            //EstudianteConfiguration.Configure(modelBuilder.Entity<Estudiante>().ToTable("Estudiante"));
-            //LibAutConfiguration.Configure(modelBuilder.Entity<LibAut>().ToTable("LibAut"));
-            //LibroConfiguration.Configure(modelBuilder.Entity<Libro>().ToTable("Libro"));
-            //PrestamoConfiguration.Configure(modelBuilder.Entity<Prestamo>().ToTable("Prestamo"));
-
-            base.OnModelCreating(modelBuilder);
+           // base.OnModelCreating(modelBuilder);
         }
 
     }

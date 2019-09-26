@@ -1,7 +1,6 @@
 ﻿using Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Relational;
 
 namespace Biblioteca.Persistence.Configurations
 {
