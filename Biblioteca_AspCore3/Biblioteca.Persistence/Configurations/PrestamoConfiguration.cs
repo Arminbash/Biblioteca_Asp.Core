@@ -7,7 +7,7 @@ namespace Biblioteca.Persistence.Configurations
 {
     public class PrestamoConfiguration : IEntityTypeConfiguration<Prestamo>
     {
-        public void Configure(EntityTypeBuilder<Prestamo> builder)
+        public  void Configure(EntityTypeBuilder<Prestamo> builder)
         {
 
             builder.Property(e => e.IdPrestamo).HasColumnName("IdPrestamo").HasColumnType("int");

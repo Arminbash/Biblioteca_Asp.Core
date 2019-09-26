@@ -7,7 +7,7 @@ namespace Biblioteca.Persistence.Configurations
 {
     public class AutorConfiguration : IEntityTypeConfiguration<Autor>
     {
-        public void Configure(EntityTypeBuilder<Autor> builder)
+        public  void Configure(EntityTypeBuilder<Autor> builder)
         {
 
             builder.Property(e => e.IdAutor).HasColumnName("IdAutor").HasColumnType("int");

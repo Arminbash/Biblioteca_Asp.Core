@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using Entities;
+using Microsoft.EntityFrameworkCore;
+using Biblioteca.Data.Interfaces;
+
 //using Biblioteca.Persistence.Extensions;
 
 namespace Biblioteca.Persistence

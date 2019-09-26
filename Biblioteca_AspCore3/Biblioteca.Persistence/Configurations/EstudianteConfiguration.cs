@@ -7,7 +7,7 @@ namespace Biblioteca.Persistence.Configurations
 {
     public class EstudianteConfiguration : IEntityTypeConfiguration<Estudiante>
     {
-        public void Configure(EntityTypeBuilder<Estudiante> builder)
+        public  void Configure(EntityTypeBuilder<Estudiante> builder)
         {
 
             builder.Property(e => e.IdEstudiante).HasColumnName("IdEstudiante").HasColumnType("Int");
