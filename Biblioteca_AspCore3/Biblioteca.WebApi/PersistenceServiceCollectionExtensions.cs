@@ -2,7 +2,8 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Biblioteca.Persisence.MSSQL;
-
+using Biblioteca.Persistence.MYSQL;
+using Biblioteca.Persistence.SqlLite;
 namespace Biblioteca.WebApi
 {
     public static class PersistenceServiceCollectionExtensions
@@ -18,10 +19,15 @@ namespace Biblioteca.WebApi
             {
                 serviceCollection.AddMssqlDbContext(config);
             }
-            //if (persistenceConfig?.Provider == "PSQL")
-            //{
-            //    serviceCollection.AddPsqlDbContext(config);
-            //}
+            if (persistenceConfig?.Provider == "MYSQL")
+            {
+                serviceCollection.AddMysqlDbContext(config);
+            }
+            if (persistenceConfig?.Provider == "SQLLITE")
+            {
+                serviceCollection.AddSqlliteDbContext(config);
+            }
+
 
             return serviceCollection;
         }

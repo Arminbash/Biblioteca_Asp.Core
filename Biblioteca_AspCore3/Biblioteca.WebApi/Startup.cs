@@ -23,6 +23,7 @@ using Biblioteca.Persistence.MSSQL;
 
 namespace Biblioteca.WebApi
 {
+    //https://www.infoworld.com/blog/microsoft-coder/
     public class Startup
     {
         public Startup(IConfiguration configuration)

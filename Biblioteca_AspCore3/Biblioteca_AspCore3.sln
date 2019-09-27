@@ -13,15 +13,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{4BE9F6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6F783BE8-E9A6-480F-B206-9392F8B186FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca.Data", "Biblioteca.Data\Biblioteca.Data.csproj", "{4E3A6277-C4CA-49B4-ACFD-59517F5D969E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biblioteca.Data", "Biblioteca.Data\Biblioteca.Data.csproj", "{4E3A6277-C4CA-49B4-ACFD-59517F5D969E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca.Domain", "Biblioteca.Domain\Biblioteca.Domain.csproj", "{627DB347-0153-405A-A6B5-FAF4C2A5602C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biblioteca.Domain", "Biblioteca.Domain\Biblioteca.Domain.csproj", "{627DB347-0153-405A-A6B5-FAF4C2A5602C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca.Persistence", "Biblioteca.Persistence\Biblioteca.Persistence.csproj", "{9A5AF5D9-D2DC-4542-84E5-9CACE9539411}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biblioteca.Persistence", "Biblioteca.Persistence\Biblioteca.Persistence.csproj", "{9A5AF5D9-D2DC-4542-84E5-9CACE9539411}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca.Persistence.MSSQL", "Biblioteca.Persistence.MSSQL\Biblioteca.Persistence.MSSQL.csproj", "{43EA24F3-62C1-4306-9365-F20B10654997}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biblioteca.Persistence.MSSQL", "Biblioteca.Persistence.MSSQL\Biblioteca.Persistence.MSSQL.csproj", "{43EA24F3-62C1-4306-9365-F20B10654997}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca.WebApi", "Biblioteca.WebApi\Biblioteca.WebApi.csproj", "{62AF666D-AC83-41FC-81A2-4970AA553DA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biblioteca.WebApi", "Biblioteca.WebApi\Biblioteca.WebApi.csproj", "{62AF666D-AC83-41FC-81A2-4970AA553DA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca.Persistence.MYSQL", "Biblioteca.Persistence.MYSQL\Biblioteca.Persistence.MYSQL.csproj", "{4D97D82D-0076-44B6-BF5C-B44F2C08D1EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca.Persistence.SqlLite", "Biblioteca.Persistence.SqlLite\Biblioteca.Persistence.SqlLite.csproj", "{9644F2BC-C1D7-40EB-A72F-D634FF122EBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,14 @@ Global
 		{62AF666D-AC83-41FC-81A2-4970AA553DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62AF666D-AC83-41FC-81A2-4970AA553DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62AF666D-AC83-41FC-81A2-4970AA553DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D97D82D-0076-44B6-BF5C-B44F2C08D1EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D97D82D-0076-44B6-BF5C-B44F2C08D1EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D97D82D-0076-44B6-BF5C-B44F2C08D1EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D97D82D-0076-44B6-BF5C-B44F2C08D1EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9644F2BC-C1D7-40EB-A72F-D634FF122EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9644F2BC-C1D7-40EB-A72F-D634FF122EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9644F2BC-C1D7-40EB-A72F-D634FF122EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9644F2BC-C1D7-40EB-A72F-D634FF122EBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +71,8 @@ Global
 		{9A5AF5D9-D2DC-4542-84E5-9CACE9539411} = {6F783BE8-E9A6-480F-B206-9392F8B186FC}
 		{43EA24F3-62C1-4306-9365-F20B10654997} = {6F783BE8-E9A6-480F-B206-9392F8B186FC}
 		{62AF666D-AC83-41FC-81A2-4970AA553DA1} = {048399A6-0FF4-4589-A231-1C597FF82A7B}
+		{4D97D82D-0076-44B6-BF5C-B44F2C08D1EC} = {6F783BE8-E9A6-480F-B206-9392F8B186FC}
+		{9644F2BC-C1D7-40EB-A72F-D634FF122EBE} = {6F783BE8-E9A6-480F-B206-9392F8B186FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B5ED8C5-B91A-4D8E-A8B6-5B321DAED13A}

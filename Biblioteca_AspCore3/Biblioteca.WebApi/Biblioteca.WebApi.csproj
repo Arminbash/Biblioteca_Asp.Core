@@ -26,6 +26,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Biblioteca.Persistence.MSSQL\Biblioteca.Persistence.MSSQL.csproj" />
+    <ProjectReference Include="..\Biblioteca.Persistence.MYSQL\Biblioteca.Persistence.MYSQL.csproj" />
+    <ProjectReference Include="..\Biblioteca.Persistence.SqlLite\Biblioteca.Persistence.SqlLite.csproj" />
     <ProjectReference Include="..\Biblioteca.Persistence\Biblioteca.Persistence.csproj" />
   </ItemGroup>
 
